@@ -1,0 +1,31 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: 'logo blank lang menu';
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo {
+  grid-area: logo;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.languagePicker {
+  grid-area: lang;
+  padding: 0 0.5rem;
+  border: 1px solid var(--light);
+  color: var(--light);
+  font-size: 1.4rem;
+}
+
+.openSidebar {
+  grid-area: menu;
+  margin-left: 1rem;
+  padding: 0;
+  border: none;
+  font-size: 2rem;
+}
