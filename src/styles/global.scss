@@ -24,6 +24,11 @@ body {
   line-height: 1.4;
 }
 
+::selection {
+  background-color: #8f5098;
+  color: #fff;
+}
+
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
