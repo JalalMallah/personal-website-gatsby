@@ -27,3 +27,77 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+      'title image'
+      'text image'
+      'button image';
+    padding: 8rem 0 0;
+    text-align: left;
+  }
+
+  .title {
+    grid-area: title;
+    margin: 0 0 2rem;
+    font-size: 4.6rem;
+    line-height: 1.2;
+    animation: slide-right 0.5s 0.4s ease both;
+  }
+
+  .hero {
+    grid-area: image;
+    width: 100%;
+    margin: 0;
+    animation: slide-left 0.5s 1s ease both;
+  }
+
+  .paragraph {
+    grid-area: text;
+    margin: 0 0 4rem;
+    font-size: 1.6rem;
+    animation: slide-right 0.5s 0.6s ease both;
+  }
+
+  .myProjectsButton {
+    grid-area: button;
+    justify-self: start;
+    align-self: start;
+    padding: 1.2rem 2.5rem;
+    outline: 2px solid var(--yellow);
+    font-size: 1.8rem;
+    transition: outline-offset 0.3s ease;
+    animation: slide-right 0.5s 0.8s ease both;
+
+    &:hover {
+      outline-offset: 4px;
+    }
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

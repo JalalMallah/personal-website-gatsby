@@ -6,7 +6,7 @@ import heroImage from '../images/desk.svg';
 import * as styles from 'styles/indexPage.module.scss';
 
 const IndexPage = () => (
-  <>
+  <div className={styles.wrapper}>
     <h1 className={styles.title}>
       My mission is to create your dream website!
     </h1>
@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Link to="/portfolio" className={styles.myProjectsButton}>
       My Projects
     </Link>
-  </>
+  </div>
 );
 
 export default IndexPage;

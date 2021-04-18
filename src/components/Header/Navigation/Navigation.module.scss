@@ -80,6 +80,54 @@
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .nav {
+    grid-area: menu;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    transform: translateY(0);
+  }
+
+  .open,
+  .close {
+    animation: none;
+  }
+
+  .closeSidebar {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    margin: 0 4rem;
+    text-align-last: left;
+  }
+
+  .item {
+    margin: 0 2rem 0 0;
+  }
+
+  .link {
+    margin: 0;
+    color: var(--light);
+    font-size: 1.5rem;
+
+    &::after {
+      border-bottom: 1px solid var(--light);
+    }
+  }
+
+  .activeLink {
+    color: var(--yellow);
+    font-weight: 500;
+  }
+}
+
 @keyframes slide-in {
   from {
     opacity: 0;

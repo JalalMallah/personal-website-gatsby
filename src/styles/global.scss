@@ -16,7 +16,7 @@
 }
 
 body {
-  height: 300vh;
+  overflow-x: hidden;
   background-color: var(--purple);
   color: var(--yellow);
   font-family: var(--font);
