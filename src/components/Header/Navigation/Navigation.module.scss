@@ -125,6 +125,10 @@
   .activeLink {
     color: var(--yellow);
     font-weight: 500;
+
+    &::after {
+      border-color: var(--yellow);
+    }
   }
 }
 
