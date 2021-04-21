@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-// import { LanguageContext } from 'context/context';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 
 import * as styles from './Navigation.module.scss';
 
@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navigation({ closeSidebar, isSidebarOpen }) {
-  // const { selectedLanguage } = useContext(LanguageContext);
+  const { t } = useTranslation();
 
   const navClassName = isSidebarOpen
     ? `${styles.nav} ${styles.open}`
@@ -28,8 +28,7 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            Home
-            {/* {selectedLanguage === 'en' ? 'Home' : 'Główna'} */}
+            {t('nav.home')}
           </Link>
         </li>
         <li className={styles.item}>
@@ -39,8 +38,7 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            Projects
-            {/* {selectedLanguage === 'en' ? 'Projects' : 'Projekty'} */}
+            {t('nav.projects')}
           </Link>
         </li>
         <li className={styles.item}>
@@ -50,8 +48,7 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            About
-            {/* {selectedLanguage === 'en' ? 'About' : 'O Mnie'} */}
+            {t('nav.about')}
           </Link>
         </li>
         <li className={styles.item}>
@@ -61,8 +58,7 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            Contact
-            {/* {selectedLanguage === 'en' ? 'Contact' : 'Kontakt'} */}
+            {t('nav.contact')}
           </Link>
         </li>
       </ul>

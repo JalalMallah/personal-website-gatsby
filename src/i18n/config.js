@@ -13,16 +13,17 @@ i18n
     },
     resources: {
       en: {
-        translation: {
-          greeting: 'Good morning!',
-        },
+        translations: require('./locales/en/translations.json'),
       },
-      es: {
-        translation: {
-          greeting: 'Buenos dias!',
-        },
+      pl: {
+        translations: require('./locales/pl/translations.json'),
       },
     },
+    ns: ['translations'],
+    defaultNS: 'translations',
+    returnObjects: true,
   });
+
+i18n.languages = ['en', 'pl'];
 
 export default i18n;

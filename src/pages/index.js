@@ -1,37 +1,25 @@
-import React, { useContext } from 'react';
-// import { LanguageContext } from 'context/context';
+import React from 'react';
 import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 
 import heroImage from '../images/desk.svg';
 
 import * as styles from 'styles/indexPage.module.scss';
 
 const IndexPage = () => {
-  // const { selectedLanguage } = useContext(LanguageContext);
+  const { t } = useTranslation();
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.title}>
-        My mission is to create your dream website!
-        {/* {selectedLanguage === 'en'
-          ? 'My mission is to create your dream website!'
-          : 'Stworzę Twoją wymarzoną stronę internetową!'} */}
-      </h1>
+      <h1 className={styles.title}>{t('home.title')}</h1>
       <img
         src={heroImage}
         className={styles.hero}
         alt="hero desk illustration"
       />
-      <p className={styles.paragraph}>
-        My name is Jalal Mallah and I’m a Front-End Web Developer. Let’s get to
-        know each other!
-        {/* {selectedLanguage === 'en'
-          ? `My name is Jalal Mallah and I’m a Front-End Web Developer. Let’s get to know each other!`
-          : 'Nazywam się Jalal Mallah i jestem Front-End Web Developerem. Poznajmy się bliżej!'} */}
-      </p>
+      <p className={styles.paragraph}>{t('home.subtitle')}</p>
       <Link to="/projects" className={styles.myProjectsButton}>
-        My Projects
-        {/* {selectedLanguage === 'en' ? 'My Projects' : 'Moje Projekty'} */}
+        {t('home.buttonText')}
       </Link>
     </div>
   );

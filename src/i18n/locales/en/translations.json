@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "My mission is to create your dream website!",
+    "subtitle": "My name is Jalal Mallah and I’m a Front-End Web Developer. Let’s get to know each other!",
+    "buttonText": "My Projects"
+  },
+  "projects": {},
+  "about": {},
+  "contact": {}
+}

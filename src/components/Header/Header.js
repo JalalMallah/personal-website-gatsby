@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react';
-// import { LanguageContext } from 'context/context';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 
 import Navigation from 'components/Header/Navigation/Navigation';
 
@@ -11,7 +11,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  // const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
+  const { i18n } = useTranslation();
 
   function openSidebar() {
     setIsSidebarOpen(true);
@@ -21,9 +21,8 @@ export default function Header() {
     setIsSidebarOpen(false);
   }
 
-  function handleLanguageChange(e) {
-    // setSelectedLanguage(e.target.value);
-    console.log(e.target.value);
+  function switchLanguage(e) {
+    i18n.changeLanguage(e.target.value);
   }
 
   return (
@@ -32,12 +31,7 @@ export default function Header() {
         JalalMallah
       </Link>
       <Navigation closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
-      <select
-        // value={selectedLanguage}
-        // value={'en'}
-        onChange={handleLanguageChange}
-        className={styles.languagePicker}
-      >
+      <select onChange={switchLanguage} className={styles.languagePicker}>
         <option value="en">en</option>
         <option value="pl">pl</option>
       </select>

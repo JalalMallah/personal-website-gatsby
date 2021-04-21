@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Główna",
+    "projects": "Projekty",
+    "about": "O Mnie",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Stworzę Twoją wymarzoną stronę internetową!",
+    "subtitle": "Nazywam się Jalal Mallah i jestem Front-End Web Developerem. Poznajmy się bliżej!",
+    "buttonText": "Moje Projekty"
+  },
+  "projects": {},
+  "about": {},
+  "contact": {}
+}
