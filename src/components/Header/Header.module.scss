@@ -4,6 +4,7 @@
   grid-template-areas: 'logo blank lang menu';
   align-items: center;
   padding: 1.5rem;
+  animation: fade-in 0.5s 0.1s ease both;
 }
 
 .logo {
@@ -16,10 +17,25 @@
 
 .languagePicker {
   grid-area: lang;
-  padding: 0 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
+  outline: none;
   border: 1px solid var(--light);
+  background-color: transparent;
   color: var(--light);
   font-size: 1.4rem;
+  cursor: pointer;
+
+  & option {
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    background-color: var(--purple);
+    color: var(--light);
+    text-align: center;
+  }
+
+  &:focus {
+    border-color: var(--yellow);
+  }
 }
 
 .openSidebar {
@@ -43,11 +59,6 @@
     font-size: 1.8rem;
     letter-spacing: 0;
     text-transform: none;
-  }
-
-  .languagePicker {
-    padding: 0 0.8rem;
-    font-size: 1.5rem;
   }
 
   .openSidebar {

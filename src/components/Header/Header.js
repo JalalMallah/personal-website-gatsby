@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { LanguageContext } from 'context/context';
 import { Link } from 'gatsby';
 
 import Navigation from 'components/Header/Navigation/Navigation';
@@ -6,23 +7,22 @@ import Navigation from 'components/Header/Navigation/Navigation';
 import * as styles from './Header.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  function handleLanguagePickerClick() {
-    console.log('pick language');
-  }
+  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
 
   function openSidebar() {
     setIsSidebarOpen(true);
-    console.log('open sidebar');
   }
 
   function closeSidebar() {
     setIsSidebarOpen(false);
-    console.log('close sidebar');
+  }
+
+  function handleLanguageChange(e) {
+    setSelectedLanguage(e.target.value);
   }
 
   return (
@@ -31,12 +31,14 @@ export default function Header() {
         JalalMallah
       </Link>
       <Navigation closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
-      <button
+      <select
+        value={selectedLanguage}
+        onChange={handleLanguageChange}
         className={styles.languagePicker}
-        onClick={handleLanguagePickerClick}
       >
-        en <FontAwesomeIcon icon={faCaretDown} />
-      </button>
+        <option value="en">en</option>
+        <option value="pl">pl</option>
+      </select>
       <button className={styles.openSidebar} onClick={openSidebar}>
         <FontAwesomeIcon icon={faBars} />
       </button>
