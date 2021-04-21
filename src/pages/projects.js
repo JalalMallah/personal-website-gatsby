@@ -28,6 +28,7 @@ export default function Projects() {
         <a
           href="https://jalalmallah.github.io/API-Hub/"
           target="_blank"
+          rel="noreferrer"
           className={styles.button}
         >
           <FontAwesomeIcon icon={faEye} /> View Project
@@ -35,6 +36,7 @@ export default function Projects() {
         <a
           href="https://github.com/JalalMallah/API-Hub"
           target="_blank"
+          rel="noreferrer"
           className={styles.button}
         >
           <FontAwesomeIcon icon={faGithubAlt} /> Link To Repo

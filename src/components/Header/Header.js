@@ -31,7 +31,7 @@ export default function Header() {
         JalalMallah
       </Link>
       <Navigation closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
-      <select onBlur={switchLanguage} className={styles.languagePicker}>
+      <select onChange={switchLanguage} className={styles.languagePicker}>
         <option value="en">en</option>
         <option value="pl">pl</option>
       </select>
