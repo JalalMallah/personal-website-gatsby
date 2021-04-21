@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { LanguageContext } from 'context/context';
+// import { LanguageContext } from 'context/context';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navigation({ closeSidebar, isSidebarOpen }) {
-  const { selectedLanguage } = useContext(LanguageContext);
+  // const { selectedLanguage } = useContext(LanguageContext);
 
   const navClassName = isSidebarOpen
     ? `${styles.nav} ${styles.open}`
@@ -28,7 +28,8 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            {selectedLanguage === 'en' ? 'Home' : 'Główna'}
+            Home
+            {/* {selectedLanguage === 'en' ? 'Home' : 'Główna'} */}
           </Link>
         </li>
         <li className={styles.item}>
@@ -38,7 +39,8 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            {selectedLanguage === 'en' ? 'Projects' : 'Projekty'}
+            Projects
+            {/* {selectedLanguage === 'en' ? 'Projects' : 'Projekty'} */}
           </Link>
         </li>
         <li className={styles.item}>
@@ -48,7 +50,8 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            {selectedLanguage === 'en' ? 'About' : 'O Mnie'}
+            About
+            {/* {selectedLanguage === 'en' ? 'About' : 'O Mnie'} */}
           </Link>
         </li>
         <li className={styles.item}>
@@ -58,7 +61,8 @@ export default function Navigation({ closeSidebar, isSidebarOpen }) {
             activeClassName={styles.activeLink}
             onClick={closeSidebar}
           >
-            {selectedLanguage === 'en' ? 'Contact' : 'Kontakt'}
+            Contact
+            {/* {selectedLanguage === 'en' ? 'Contact' : 'Kontakt'} */}
           </Link>
         </li>
       </ul>

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { LanguageContext } from 'context/context';
+// import { LanguageContext } from 'context/context';
 import { Link } from 'gatsby';
 
 import Navigation from 'components/Header/Navigation/Navigation';
@@ -11,7 +11,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
+  // const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
 
   function openSidebar() {
     setIsSidebarOpen(true);
@@ -22,7 +22,8 @@ export default function Header() {
   }
 
   function handleLanguageChange(e) {
-    setSelectedLanguage(e.target.value);
+    // setSelectedLanguage(e.target.value);
+    console.log(e.target.value);
   }
 
   return (
@@ -32,7 +33,8 @@ export default function Header() {
       </Link>
       <Navigation closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
       <select
-        value={selectedLanguage}
+        // value={selectedLanguage}
+        // value={'en'}
         onChange={handleLanguageChange}
         className={styles.languagePicker}
       >
