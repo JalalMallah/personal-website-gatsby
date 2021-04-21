@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: 'logo blank lang menu';
@@ -11,7 +13,6 @@
   grid-area: logo;
   font-size: 1.5rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 

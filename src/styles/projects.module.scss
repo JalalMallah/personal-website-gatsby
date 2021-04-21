@@ -2,7 +2,7 @@
   text-align: left;
 }
 
-.singleProject {
+.projectCard {
   margin: 0 0 4rem;
 }
 
@@ -13,14 +13,50 @@
   letter-spacing: 2px;
 }
 
-.image {
-  max-width: 100%;
-  margin: 0 0 1rem;
+.imageLink {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover .image {
+    transform: scale(0.95);
+  }
 }
 
-.text {
-  margin: 0 0 1rem;
+.image {
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  transition: transform 0.2s ease;
+}
+
+.description {
+  margin: 0 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--yellow);
   font-size: 1.5rem;
+  font-style: italic;
+}
+
+.listTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.list {
+  margin: 0 0 1.5rem;
+  padding-left: 2rem;
+  list-style-type: none;
+
+  & li {
+    font-size: 1.5rem;
+  }
+}
+
+.itemMarker {
+  margin-right: 0.5rem;
 }
 
 .button {

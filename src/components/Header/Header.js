@@ -7,7 +7,7 @@ import Navigation from 'components/Header/Navigation/Navigation';
 import * as styles from './Header.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faStream } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -36,7 +36,7 @@ export default function Header() {
         <option value="pl">pl</option>
       </select>
       <button className={styles.openSidebar} onClick={openSidebar}>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faStream} />
       </button>
     </header>
   );
