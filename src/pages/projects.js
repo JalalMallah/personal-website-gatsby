@@ -1,10 +1,10 @@
 import React from 'react';
 
 import xxx from 'images/mockups/xxx.jpg';
-import apiHubMockup from 'images/mockups/api-hub.jpg';
-import formMockup from 'images/mockups/form-validation.jpg';
-import landingPageMockup from 'images/mockups/landing-page.jpg';
-import countdownMockup from 'images/mockups/new-year-countdown.jpg';
+// import apiHubMockup from 'images/mockups/api-hub.jpg';
+// import formMockup from 'images/mockups/form-validation.jpg';
+// import landingPageMockup from 'images/mockups/landing-page.jpg';
+// import countdownMockup from 'images/mockups/new-year-countdown.jpg';
 
 import * as styles from 'styles/projects.module.scss';
 
@@ -22,36 +22,6 @@ export default function Projects() {
           This projects groups multiple API-based projects into one large
           project. The services that I've chosen include: quote generator,
           current weather, exchange rates, song lyrics and a meal finder.
-        </p>
-        <h4>Used technologies:</h4>
-        <p>React / Styled components</p>
-        <a
-          href="https://jalalmallah.github.io/API-Hub/"
-          target="_blank"
-          className={styles.button}
-        >
-          <FontAwesomeIcon icon={faEye} /> View Project
-        </a>
-        <a
-          href="https://github.com/JalalMallah/API-Hub"
-          target="_blank"
-          className={styles.button}
-        >
-          <FontAwesomeIcon icon={faGithubAlt} /> Link To Repo
-        </a>
-      </article>
-      <article className={styles.singleProject}>
-        <h3 className={styles.subtitle}>Form with validation</h3>
-        <img
-          src={formMockup}
-          alt="Form with validation"
-          className={styles.image}
-        />
-        <p className={styles.text}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam
-          saepe porro nobis? Repellat enim vero fugiat quo! Asperiores, ullam
-          reiciendis. Voluptatem provident consequatur nostrum exercitationem
-          cumque, quidem sed id.
         </p>
         <h4>Used technologies:</h4>
         <p>React / Styled components</p>
