@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from 'components/Project/Project';
 
 import apihubMockup from 'images/mockups/hub.jpg';
 import countdownMockup from 'images/mockups/countdown.jpg';
@@ -7,66 +8,55 @@ import landingPageMockup from 'images/mockups/landing-page.jpg';
 
 import * as styles from 'styles/projects.module.scss';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBolt, faEye } from '@fortawesome/free-solid-svg-icons';
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+const projectsData = [
+  {
+    id: 0,
+    title: 'API Hub',
+    image: apihubMockup,
+    repo: 'https://github.com/JalalMallah/API-Hub/tree/master',
+    site: 'https://jalalmallah.github.io/API-Hub/',
+    technologies: ['react', 'react-router', 'styled-components'],
+  },
+  {
+    id: 1,
+    title: 'Landing Page with Modal',
+    image: landingPageMockup,
+    repo: 'https://github.com/JalalMallah/landing-page-with-modal/tree/master',
+    site: 'https://jalalmallah.github.io/landing-page-with-modal/',
+    technologies: ['react', 'react-router', 'sass'],
+  },
+  {
+    id: 2,
+    title: 'Form with Validation',
+    image: formMockup,
+    repo:
+      'https://github.com/JalalMallah/form-validation-with-input-animation/tree/master',
+    site: 'https://jalalmallah.github.io/form-validation-with-input-animation/',
+    technologies: ['react', 'css'],
+  },
+  {
+    id: 3,
+    title: 'New Year Countdown',
+    image: countdownMockup,
+    repo: 'https://github.com/JalalMallah/new-year-countdown/tree/master',
+    site: 'https://jalalmallah.github.io/new-year-countdown/',
+    technologies: ['javascript', 'sass'],
+  },
+];
 
 export default function Projects() {
   return (
     <div className={styles.wrapper}>
-      <article className={styles.projectCard}>
-        <h3 className={styles.subtitle}>API Hub</h3>
-        <a
-          href="https://jalalmallah.github.io/API-Hub/"
-          target="_blank"
-          rel="noreferrer"
-          className={styles.imageLink}
-        >
-          <img src={apihubMockup} alt="API Hub" className={styles.image} />
-        </a>
-        <p className={styles.description}>
-          This projects groups multiple API-based projects into one large
-          project. The services that I've chosen include: quote generator,
-          current weather, exchange rates, song lyrics and a meal finder.
-        </p>
-        <h4 className={styles.listTitle}>Used technologies:</h4>
-        <ul className={styles.list}>
-          <li>
-            <span className={styles.itemMarker}>
-              <FontAwesomeIcon icon={faBolt} />
-            </span>
-            React
-          </li>
-          <li>
-            <span className={styles.itemMarker}>
-              <FontAwesomeIcon icon={faBolt} />
-            </span>
-            Styled components
-          </li>
-          <li>
-            <span className={styles.itemMarker}>
-              <FontAwesomeIcon icon={faBolt} />
-            </span>
-            CSS Modules
-          </li>
-        </ul>
-        <a
-          href="https://jalalmallah.github.io/API-Hub/"
-          target="_blank"
-          rel="noreferrer"
-          className={styles.button}
-        >
-          <FontAwesomeIcon icon={faEye} /> View Project
-        </a>
-        <a
-          href="https://github.com/JalalMallah/API-Hub"
-          target="_blank"
-          rel="noreferrer"
-          className={styles.button}
-        >
-          <FontAwesomeIcon icon={faGithubAlt} /> Link To Repo
-        </a>
-      </article>
+      {projectsData.map(({ id, image, repo, site, technologies, title }) => (
+        <Project
+          key={id}
+          image={image}
+          repo={repo}
+          site={site}
+          technologies={technologies}
+          title={title}
+        />
+      ))}
     </div>
   );
 }
