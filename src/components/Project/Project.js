@@ -10,11 +10,18 @@ import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 export default function Project({ image, repo, site, technologies, title }) {
   return (
     <article className={styles.wrapper}>
-      <img src={image} alt={title} className={styles.image} />
       <h3 className={styles.title}>{title}</h3>
+      <a
+        href={site}
+        target="_blank"
+        rel="noreferrer"
+        className={styles.imageLink}
+      >
+        <img src={image} alt={title} className={styles.image} />
+      </a>
       <div className={styles.technologies}>
         {technologies.map(item => (
-          <span>{item}</span>
+          <span key={item}>{item}</span>
         ))}
       </div>
       <a href={site} target="_blank" rel="noreferrer" className={styles.button}>

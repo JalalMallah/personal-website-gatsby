@@ -6,8 +6,6 @@ import countdownMockup from 'images/mockups/countdown.jpg';
 import formMockup from 'images/mockups/form.jpg';
 import landingPageMockup from 'images/mockups/landing-page.jpg';
 
-import * as styles from 'styles/projects.module.scss';
-
 const projectsData = [
   {
     id: 0,
@@ -46,7 +44,7 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <div className={styles.wrapper}>
+    <>
       {projectsData.map(({ id, image, repo, site, technologies, title }) => (
         <Project
           key={id}
@@ -57,6 +55,6 @@ export default function Projects() {
           title={title}
         />
       ))}
-    </div>
+    </>
   );
 }
