@@ -10,6 +10,10 @@
     "subtitle": "Nazywam się Jalal Mallah i jestem Front-End Web Developerem. Poznajmy się bliżej!",
     "buttonText": "Moje Projekty"
   },
+  "footer": {
+    "text": "Stronę stworzył Jalal Mallah za pomocą",
+    "source": "Kod źródłowy"
+  },
   "projects": {},
   "about": {},
   "contact": {}

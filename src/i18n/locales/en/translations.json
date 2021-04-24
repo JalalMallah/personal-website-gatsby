@@ -10,6 +10,10 @@
     "subtitle": "My name is Jalal Mallah and I’m a Front-End Web Developer. Let’s get to know each other!",
     "buttonText": "My Projects"
   },
+  "footer": {
+    "text": "Built by Jalal Mallah with",
+    "source": "Source code"
+  },
   "projects": {},
   "about": {},
   "contact": {}

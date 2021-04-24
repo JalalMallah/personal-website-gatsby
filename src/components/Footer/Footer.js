@@ -1,12 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import * as styles from './footer.module.scss';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <p>
-        Built by Jalal Mallah with{' '}
+        {t('footer.text')}{' '}
         <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">
           Gatsby
         </a>
@@ -16,7 +19,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          Source code
+          {t('footer.source')}
         </a>
         .
       </p>
