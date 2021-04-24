@@ -1,10 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
+import { useTranslation } from 'react-i18next';
 
 import Project from 'components/Project/Project';
 
 export default function Projects({ data }) {
+  const { t } = useTranslation();
+
   const projectsData = [
     {
       id: 0,
@@ -16,7 +19,7 @@ export default function Projects({ data }) {
     },
     {
       id: 1,
-      title: 'Landing Page with Modal',
+      title: t('projects.landingPage'),
       image: getImage(data.allFile.nodes[1]),
       repo:
         'https://github.com/JalalMallah/landing-page-with-modal/tree/master',
@@ -25,7 +28,7 @@ export default function Projects({ data }) {
     },
     {
       id: 2,
-      title: 'Form with Validation',
+      title: t('projects.form'),
       image: getImage(data.allFile.nodes[2]),
       repo:
         'https://github.com/JalalMallah/form-validation-with-input-animation/tree/master',
@@ -35,7 +38,7 @@ export default function Projects({ data }) {
     },
     {
       id: 3,
-      title: 'New Year Countdown',
+      title: t('projects.countdown'),
       image: getImage(data.allFile.nodes[3]),
       repo: 'https://github.com/JalalMallah/new-year-countdown/tree/master',
       site: 'https://jalalmallah.github.io/new-year-countdown/',

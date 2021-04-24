@@ -14,7 +14,13 @@
     "text": "Stronę stworzył Jalal Mallah za pomocą",
     "source": "Kod źródłowy"
   },
-  "projects": {},
+  "projects": {
+    "landingPage": "Landing Page z Modalem",
+    "form": "Formularz z Walidacją",
+    "countdown": "Odliczanie do Nowego Roku",
+    "view": " Podgląd Projektu",
+    "repo": " Repozytorium"
+  },
   "about": {},
   "contact": {}
 }

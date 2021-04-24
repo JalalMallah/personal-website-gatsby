@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { useTranslation } from 'react-i18next';
 
 import * as styles from './project.module.scss';
 
@@ -9,6 +10,8 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 export default function Project({ image, repo, site, technologies, title }) {
+  const { t } = useTranslation();
+
   return (
     <figure className={styles.projectContainer}>
       <figcaption className={styles.title}>{title}</figcaption>
@@ -23,7 +26,8 @@ export default function Project({ image, repo, site, technologies, title }) {
             rel="noreferrer"
             className={styles.button}
           >
-            <FontAwesomeIcon icon={faEye} /> View Project
+            <FontAwesomeIcon icon={faEye} />
+            {t('projects.view')}
           </a>
           <a
             href={repo}
@@ -31,7 +35,8 @@ export default function Project({ image, repo, site, technologies, title }) {
             rel="noreferrer"
             className={styles.button}
           >
-            <FontAwesomeIcon icon={faGithubAlt} /> Repository
+            <FontAwesomeIcon icon={faGithubAlt} />
+            {t('projects.repo')}
           </a>
         </div>
       </div>

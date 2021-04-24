@@ -14,7 +14,13 @@
     "text": "Built by Jalal Mallah with",
     "source": "Source code"
   },
-  "projects": {},
+  "projects": {
+    "landingPage": "Landing Page with Modal",
+    "form": "Form with Validation",
+    "countdown": "New Year Countdown",
+    "view": " View Project",
+    "repo": " Repository"
+  },
   "about": {},
   "contact": {}
 }
