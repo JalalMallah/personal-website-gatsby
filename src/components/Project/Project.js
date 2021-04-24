@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import * as styles from './project.module.scss';
 
@@ -13,7 +14,7 @@ export default function Project({ image, repo, site, technologies, title }) {
       <figcaption className={styles.title}>{title}</figcaption>
       <div className={styles.imageContainer}>
         <a href="#" className={styles.imageLink}>
-          <img src={image} alt={title} className={styles.image} />
+          <GatsbyImage image={image} alt={title} className={styles.image} />
         </a>
         <div className={styles.buttonsContainer}>
           <a
@@ -44,7 +45,7 @@ export default function Project({ image, repo, site, technologies, title }) {
 }
 
 Project.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
   repo: PropTypes.string.isRequired,
   site: PropTypes.string.isRequired,
   technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
