@@ -22,5 +22,10 @@
     "repo": " Repository"
   },
   "about": {},
-  "contact": {}
+  "contact": {
+    "title": "Let's get in touch!",
+    "github": "GitHub Profile",
+    "linkedin": "LinkedIn Profile",
+    "twitter": "Twitter Profile"
+  }
 }

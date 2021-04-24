@@ -22,5 +22,10 @@
     "repo": " Repozytorium"
   },
   "about": {},
-  "contact": {}
+  "contact": {
+    "title": "Skontaktujmy się!",
+    "github": "Profil na GitHub'ie",
+    "linkedin": "Profil na LinkedIn'ie",
+    "twitter": "Profil na Twitterze"
+  }
 }
