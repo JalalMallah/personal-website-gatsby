@@ -1,0 +1,37 @@
+.title {
+  margin: 0 0 2rem;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.contactList {
+  padding-left: 2rem;
+  list-style-type: none;
+  text-align: left;
+
+  & li {
+    margin: 0 0 1rem;
+  }
+}
+
+.link {
+  position: relative;
+  margin: 0 0 0 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 1px 0 0;
+    border-bottom: 2px solid var(--yellow);
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scale(1, 1);
+  }
+}
