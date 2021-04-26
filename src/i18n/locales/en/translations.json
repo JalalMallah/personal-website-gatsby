@@ -23,7 +23,24 @@
     "view": " View Project",
     "repo": " Repository"
   },
-  "about": {},
+  "about": {
+    "title": "About me",
+    "bio": "Welcome to my corner of the internet. I'm glad you're here! A few words about me: an aspiring Front-End Web developer, currently looking for my first job and commercial challenges. A self-taught developer driven by my curiosity to explore and learn new technologies. A huge fan of the React ecosystem and also a huge fan of Uncle Bob's clean code philosophy!",
+    "listTitle": "Technologies & tools I work with:",
+    "html": "Semantic HTML5",
+    "css": "CSS:",
+    "js": "JavaScript:",
+    "react": "ReactJS:",
+    "gatsby": "Gatsby",
+    "routing": "Routing:",
+    "cssInJs": "CSS in JS:",
+    "modules": "CSS Modules",
+    "git": "Version Control:",
+    "hosting": "Hosting & Deployment:",
+    "lang": "Internationalization:",
+    "design": "Design Tools:",
+    "linux": "Linux Terminal"
+  },
   "contact": {
     "title": "Let's get in touch!",
     "github": "GitHub Profile",

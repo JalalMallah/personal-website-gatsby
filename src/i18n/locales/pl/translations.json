@@ -23,7 +23,24 @@
     "view": " Podgląd Projektu",
     "repo": " Repozytorium"
   },
-  "about": {},
+  "about": {
+    "title": "O mnie",
+    "bio": "Witaj na moim małym kawałku internetu. Super, że jesteś! Parę słów o mnie: jestem aspirującym Front-End Web Developerem i obecnie jestem w trakcie poszukiwania swojej pierwszej pracy w branży. Jako samouk, napędza mnie ciekawość i chęć poznawania nowych technologii. Jestem również wielkim fanem ekosystemu React'owego i wyznawcą filozofii czystego kodu Wójka Bob'a!",
+    "listTitle": "Technologie i narzędzia, z którymi pracuję:",
+    "html": "Semantyczny HTML5",
+    "css": "CSS:",
+    "js": "JavaScript:",
+    "react": "ReactJS:",
+    "gatsby": "Gatsby",
+    "routing": "Routing:",
+    "cssInJs": "CSS in JS:",
+    "modules": "CSS Modules",
+    "git": "Kontrola Wersji:",
+    "hosting": "Hosting & Deployment:",
+    "lang": "Internacjonalizacja:",
+    "design": "Projektowanie Stron:",
+    "linux": "Terminal Linux'owy"
+  },
   "contact": {
     "title": "Skontaktujmy się!",
     "github": "Profil na GitHub'ie",
