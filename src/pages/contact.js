@@ -31,19 +31,34 @@ export default function Contact() {
         </li>
         <li>
           <FontAwesomeIcon icon={faGithub} />
-          <a href="#" className={styles.link} target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/JalalMallah"
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             {t('contact.github')}
           </a>
         </li>
         <li>
           <FontAwesomeIcon icon={faLinkedin} />
-          <a href="#" className={styles.link} target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/jalal-mallah"
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             {t('contact.linkedin')}
           </a>
         </li>
         <li>
           <FontAwesomeIcon icon={faTwitter} />
-          <a href="#" className={styles.link} target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/jalal_mallah_"
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             {t('contact.twitter')}
           </a>
         </li>
