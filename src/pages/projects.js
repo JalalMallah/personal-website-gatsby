@@ -47,6 +47,8 @@ export default function Projects({ data }) {
   ];
   return (
     <>
+      <h2>{t('projects.title')}</h2>
+      <p>{t('projects.description')}</p>
       {projectsData.map(({ id, image, repo, site, technologies, title }) => (
         <Project
           key={id}

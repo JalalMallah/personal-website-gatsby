@@ -6,7 +6,7 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "My mission is to create your dream website!",
+    "title": "My mission is to create awesome webistes!",
     "subtitle": "My name is Jalal Mallah and I’m a Front-End Web Developer. Let’s get to know each other!",
     "buttonText": "My Projects"
   },
@@ -15,6 +15,8 @@
     "source": "Source code"
   },
   "projects": {
+    "title": "My Work",
+    "description": "Here you can see my latest work and projects. This section will be regularly updated as I create and complete new projects.",
     "landingPage": "Landing Page with Modal",
     "form": "Form with Validation",
     "countdown": "New Year Countdown",

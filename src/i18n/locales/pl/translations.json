@@ -6,7 +6,7 @@
     "contact": "Kontakt"
   },
   "home": {
-    "title": "Stworzę Twoją wymarzoną stronę internetową!",
+    "title": "Moją misją jest tworzenie świetnych stron internetowych!",
     "subtitle": "Nazywam się Jalal Mallah i jestem Front-End Web Developerem. Poznajmy się bliżej!",
     "buttonText": "Moje Projekty"
   },
@@ -15,6 +15,8 @@
     "source": "Kod źródłowy"
   },
   "projects": {
+    "title": "Moje Projekty",
+    "description": "W tej sekcji przedstawiam swoje najnowsze projekty. Sekcja ta będzie regularnie aktualizowana w miarę ukończenia kolejnych projektów.",
     "landingPage": "Landing Page z Modalem",
     "form": "Formularz z Walidacją",
     "countdown": "Odliczanie do Nowego Roku",
