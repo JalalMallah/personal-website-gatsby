@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import Title from 'components/Title/Title';
 import ContactOption from 'components/ContactOption/ContactOption';
+import List from 'components/List/List';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -11,8 +12,6 @@ import {
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-
-import * as styles from 'styles/contact.module.scss';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -47,7 +46,7 @@ export default function Contact() {
   return (
     <>
       <Title text={t('contact.title')} />
-      <ul className={styles.contactList}>
+      <List>
         {contactData.map(item => (
           <ContactOption
             key={item.name}
@@ -56,7 +55,7 @@ export default function Contact() {
             label={item.label}
           />
         ))}
-      </ul>
+      </List>
     </>
   );
 }

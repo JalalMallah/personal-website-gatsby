@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Skill from 'components/Skill/Skill';
 import Title from 'components/Title/Title';
 import Text from 'components/Text/Text';
+import List from 'components/List/List';
 
 import * as styles from 'styles/about.module.scss';
 
@@ -87,7 +88,7 @@ export default function About() {
       <Title text={t('about.title')} />
       <Text text={t('about.bio')} />
       <h3 className={styles.subtitle}>{t('about.listTitle')}</h3>
-      <ul className={styles.list}>
+      <List>
         {skillsData.map(skill => (
           <Skill
             key={skill.id}
@@ -96,7 +97,7 @@ export default function About() {
             options={skill.options}
           />
         ))}
-      </ul>
+      </List>
     </>
   );
 }
