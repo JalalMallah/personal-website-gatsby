@@ -39,8 +39,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: darken(#60246a, 10%);
-  border-radius: 20px;
+  background: var(--purple-dark);
+  border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
