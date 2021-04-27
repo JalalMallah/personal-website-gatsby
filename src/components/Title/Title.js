@@ -15,5 +15,5 @@ export default function Title({ text }) {
 }
 
 Title.propTypes = {
-  text: PropTypes.object.isRequired,
+  text: PropTypes.string.isRequired,
 };
