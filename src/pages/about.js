@@ -22,6 +22,7 @@ export default function About() {
         'RWD',
         'BEM',
         'flexbox',
+        'grid',
         'CSS variables',
         'transitions',
         'animations',
