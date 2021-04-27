@@ -5,8 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import Project from 'components/Project/Project';
 import Title from 'components/Title/Title';
-
-import * as styles from 'styles/projects.module.scss';
+import Text from 'components/Text/Text';
 
 export default function Projects({ data }) {
   const { t } = useTranslation();
@@ -51,7 +50,7 @@ export default function Projects({ data }) {
   return (
     <>
       <Title text={t('projects.title')} />
-      <p className={styles.description}>{t('projects.description')}</p>
+      <Text text={t('projects.description')} />
       {projectsData.map(({ id, image, repo, site, technologies, title }) => (
         <Project
           key={id}
