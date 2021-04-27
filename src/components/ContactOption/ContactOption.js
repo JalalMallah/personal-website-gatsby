@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import * as styles from './contactOption.module.scss';
 
@@ -12,3 +13,9 @@ export default function ContactOption({ href, icon, label }) {
     </li>
   );
 }
+
+ContactOption.propTypes = {
+  href: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
+  label: PropTypes.string.isRequired,
+};
