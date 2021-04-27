@@ -4,6 +4,7 @@ import { getImage } from 'gatsby-plugin-image';
 import { useTranslation } from 'react-i18next';
 
 import Project from 'components/Project/Project';
+import Title from 'components/Title/Title';
 
 import * as styles from 'styles/projects.module.scss';
 
@@ -49,7 +50,7 @@ export default function Projects({ data }) {
   ];
   return (
     <>
-      <h2 className={styles.title}>{t('projects.title')}</h2>
+      <Title text={t('projects.title')} />
       <p className={styles.description}>{t('projects.description')}</p>
       {projectsData.map(({ id, image, repo, site, technologies, title }) => (
         <Project

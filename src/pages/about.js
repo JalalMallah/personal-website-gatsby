@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Skill from 'components/Skill/Skill';
+import Title from 'components/Title/Title';
 
 import * as styles from 'styles/about.module.scss';
 
@@ -82,7 +83,7 @@ export default function About() {
 
   return (
     <>
-      <h2 className={styles.title}>{t('about.title')}</h2>
+      <Title text={t('about.title')} />
       <p className={styles.bio}>{t('about.bio')}</p>
       <h3 className={styles.subtitle}>{t('about.listTitle')}</h3>
       <ul className={styles.list}>

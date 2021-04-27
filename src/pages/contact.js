@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Title from 'components/Title/Title';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -16,7 +18,7 @@ export default function Contact() {
 
   return (
     <>
-      <h2 className={styles.title}>{t('contact.title')}</h2>
+      <Title text={t('contact.title')} />
       <ul className={styles.contactList}>
         <li>
           <FontAwesomeIcon icon={faEnvelope} />
