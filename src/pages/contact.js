@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Title from 'components/Title/Title';
+import ContactOption from 'components/ContactOption/ContactOption';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -16,54 +17,45 @@ import * as styles from 'styles/contact.module.scss';
 export default function Contact() {
   const { t } = useTranslation();
 
+  const contactData = [
+    {
+      name: 'email',
+      icon: <FontAwesomeIcon icon={faEnvelope} />,
+      href: 'mailto:hello@jalalmallah.io',
+      label: 'hello@jalalmallah.io',
+    },
+    {
+      name: 'github',
+      icon: <FontAwesomeIcon icon={faGithub} />,
+      href: 'https://github.com/JalalMallah',
+      label: t('contact.github'),
+    },
+    {
+      name: 'linkedin',
+      icon: <FontAwesomeIcon icon={faLinkedin} />,
+      href: 'https://www.linkedin.com/in/jalal-mallah',
+      label: t('contact.linkedin'),
+    },
+    {
+      name: 'twitter',
+      icon: <FontAwesomeIcon icon={faTwitter} />,
+      href: 'https://twitter.com/jalal_mallah_',
+      label: t('contact.twitter'),
+    },
+  ];
+
   return (
     <>
       <Title text={t('contact.title')} />
       <ul className={styles.contactList}>
-        <li>
-          <FontAwesomeIcon icon={faEnvelope} />
-          <a
-            href="mailto:hello@jalalmallah.io"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            hello@jalalmallah.io
-          </a>
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faGithub} />
-          <a
-            href="https://github.com/JalalMallah"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t('contact.github')}
-          </a>
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faLinkedin} />
-          <a
-            href="https://www.linkedin.com/in/jalal-mallah"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t('contact.linkedin')}
-          </a>
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faTwitter} />
-          <a
-            href="https://twitter.com/jalal_mallah_"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t('contact.twitter')}
-          </a>
-        </li>
+        {contactData.map(item => (
+          <ContactOption
+            key={item.name}
+            icon={item.icon}
+            href={item.href}
+            label={item.label}
+          />
+        ))}
       </ul>
     </>
   );
