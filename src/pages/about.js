@@ -98,6 +98,7 @@ export default function About() {
           />
         ))}
       </List>
+      <Text text={t('about.private')} />
     </>
   );
 }

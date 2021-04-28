@@ -25,7 +25,7 @@
   },
   "about": {
     "title": "About me",
-    "bio": "Welcome to my corner of the internet. I'm glad you're here! A few words about me: an aspiring Front-End Web developer, currently looking for my first job and commercial challenges. A self-taught developer driven by my curiosity to explore and learn new technologies. A huge fan of the React ecosystem and also a huge fan of Uncle Bob's clean code philosophy!",
+    "bio": "Welcome to my corner of the internet. I'm glad you're here! A few words about me: I'm an aspiring Front-End Web developer, currently looking for my first job and commercial challenges. A self-taught developer driven by my curiosity to explore and learn new technologies. A huge fan of the React ecosystem and also a huge fan of Uncle Bob's clean code philosophy!",
     "listTitle": "Technologies & tools I work with:",
     "html": "Semantic HTML5",
     "css": "CSS:",
@@ -39,7 +39,8 @@
     "hosting": "Hosting & Deployment:",
     "lang": "Internationalization:",
     "design": "Design Tools:",
-    "linux": "Linux Terminal"
+    "linux": "Linux Terminal",
+    "private": "Privately, a bookworm, polyglot and enthusiast of foreign languages, a lover of strength training, OCR races and a faithful fan of FC Barcelona. If I had to choose one place to live permanently, it would be Marbella"
   },
   "contact": {
     "title": "Let's get in touch!",
