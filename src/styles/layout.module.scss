@@ -7,12 +7,12 @@
 
 .main {
   flex: 1;
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem 1rem;
   text-align: center;
 }
 
-@media (min-width: 1024px) {
-  .main {
-    padding: 0 8rem;
+@media (min-width: 768px) {
+  .site {
+    padding: 2rem 8rem 0;
   }
 }

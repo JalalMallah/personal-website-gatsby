@@ -13,12 +13,11 @@
   grid-area: logo;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .languagePicker {
   grid-area: lang;
-  padding: 0.2rem 0 0.2rem 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.2rem;
   outline: none;
   border: 1px solid var(--light);
   background-color: transparent;
@@ -41,10 +40,32 @@
 
 .openSidebar {
   grid-area: menu;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
   padding: 0;
   border: none;
   font-size: 2rem;
+}
+
+@media (min-width: 360px) {
+  .logo {
+    font-size: 1.6rem;
+    text-transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.8rem;
+    text-transform: none;
+  }
+
+  .openSidebar {
+    font-size: 2.4rem;
+  }
+
+  .languagePicker {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -52,14 +73,7 @@
     grid-template-columns: auto 1fr auto;
     grid-template-areas: 'logo menu lang';
     align-items: center;
-    padding: 3rem 8rem;
     animation: fade-in 0.5s 0.1s ease both;
-  }
-
-  .logo {
-    font-size: 1.8rem;
-    letter-spacing: 0;
-    text-transform: none;
   }
 
   .openSidebar {

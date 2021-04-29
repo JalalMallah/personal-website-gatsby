@@ -94,3 +94,10 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .projectContainer {
+    flex: 0 0 48%;
+    margin: 0 0 5rem;
+  }
+}

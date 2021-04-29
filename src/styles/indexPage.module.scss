@@ -32,10 +32,38 @@
   animation: slide-left 0.5s 1.2s ease both;
 }
 
+@media (min-width: 360px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin: 2rem 0;
+    font-size: 3.6rem;
+  }
+
+  .hero {
+    margin: 0 auto 4rem;
+    width: 80%;
+  }
+
+  .paragraph {
+    margin: 0 auto 3rem;
+    width: 80%;
+    font-size: 1.6rem;
+  }
+
+  .myProjectsButton {
+    font-size: 1.8rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .wrapper {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     grid-template-areas:
       'title image'
       'text image'
@@ -47,7 +75,7 @@
   .title {
     grid-area: title;
     margin: 0 0 2rem;
-    font-size: 4.6rem;
+    font-size: 4.8rem;
     line-height: 1.2;
     animation: slide-right 0.5s 0.4s ease both;
   }

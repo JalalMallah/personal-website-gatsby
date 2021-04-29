@@ -19,3 +19,13 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .skill {
+    font-size: 1.6rem;
+
+    & span {
+      font-size: 1.4rem;
+    }
+  }
+}

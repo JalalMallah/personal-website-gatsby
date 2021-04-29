@@ -7,6 +7,8 @@ import Project from 'components/Project/Project';
 import Title from 'components/Title/Title';
 import Text from 'components/Text/Text';
 
+import * as styles from 'styles/projects.module.scss';
+
 export default function Projects({ data }) {
   const { t } = useTranslation();
 
@@ -51,16 +53,18 @@ export default function Projects({ data }) {
     <>
       <Title text={t('projects.title')} />
       <Text text={t('projects.description')} />
-      {projectsData.map(({ id, image, repo, site, technologies, title }) => (
-        <Project
-          key={id}
-          image={image}
-          repo={repo}
-          site={site}
-          technologies={technologies}
-          title={title}
-        />
-      ))}
+      <div className={styles.projectsWrapper}>
+        {projectsData.map(({ id, image, repo, site, technologies, title }) => (
+          <Project
+            key={id}
+            image={image}
+            repo={repo}
+            site={site}
+            technologies={technologies}
+            title={title}
+          />
+        ))}
+      </div>
     </>
   );
 }

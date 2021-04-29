@@ -3,3 +3,9 @@
   text-align: left;
   font-size: 1.6rem;
 }
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}

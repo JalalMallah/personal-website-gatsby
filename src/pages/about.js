@@ -26,7 +26,7 @@ export default function About() {
         'BEM',
         'flexbox',
         'grid',
-        'CSS variables',
+        'CSS custom properties',
         'transitions',
         'animations',
       ],
@@ -64,7 +64,7 @@ export default function About() {
     {
       id: 8,
       label: t('about.hosting'),
-      options: ['netlify', 'gh-pages'],
+      options: ['netlify', 'gh-pages', 'OVH'],
     },
     {
       id: 9,

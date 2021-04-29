@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  left: 0;
+  right: 0;
   transform: translateY(-100%);
   display: flex;
   flex-direction: column;
@@ -78,6 +78,29 @@
 
 .activeLink {
   font-weight: 700;
+}
+
+@media (min-width: 360px) {
+  .nav {
+    padding: 12rem 0;
+  }
+
+  .link {
+    margin: 0 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .link {
+    margin: 0 0 3rem;
+    font-size: 2rem;
+  }
+
+  .closeSidebar {
+    top: 3rem;
+    right: 3rem;
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
