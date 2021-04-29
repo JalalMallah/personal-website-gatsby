@@ -19,19 +19,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Jalal Mallah - Personal Website`,
+        short_name: `JM Homepage`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#efaa1f`,
+        theme_color: `#60246a`,
+        display: `standalone`,
         icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-layout`,
     'gatsby-plugin-resolve-src',
     {
