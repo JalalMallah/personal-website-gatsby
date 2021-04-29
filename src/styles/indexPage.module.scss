@@ -1,5 +1,5 @@
 .title {
-  margin: 0;
+  margin: 2rem 0 1rem;
   font-size: 2rem;
   animation: slide-right 0.5s 0.6s ease both;
 }
@@ -7,13 +7,13 @@
 .hero {
   display: block;
   width: 90%;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
   animation: slide-left 0.5s 0.8s ease both;
 }
 
 .paragraph {
   width: 90%;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
   color: var(--light);
   font-size: 1rem;
   font-weight: 700;
