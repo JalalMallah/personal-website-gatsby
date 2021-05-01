@@ -16,7 +16,12 @@ export default function Project({ image, repo, site, technologies, title }) {
     <figure className={styles.projectContainer}>
       <figcaption className={styles.title}>{title}</figcaption>
       <div className={styles.imageContainer}>
-        <a href="#" className={styles.imageLink}>
+        <a
+          href={site}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.imageLink}
+        >
           <GatsbyImage image={image} alt={title} className={styles.image} />
         </a>
         <div className={styles.buttonsContainer}>
