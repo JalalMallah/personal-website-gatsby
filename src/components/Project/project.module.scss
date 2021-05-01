@@ -41,7 +41,7 @@
   align-items: center;
   width: 100%;
   padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .button {
@@ -97,11 +97,7 @@
 
 @media (min-width: 1024px) {
   .projectContainer {
-    flex: 0 0 48%;
+    flex: 0 0 32%;
     margin: 0 0 5rem;
-  }
-
-  .button {
-    padding: 0.6rem 1.2rem;
   }
 }
