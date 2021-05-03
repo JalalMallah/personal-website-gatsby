@@ -1,6 +1,19 @@
 .projectContainer {
   margin: 0 0 4rem;
   text-align: left;
+
+  @media (min-width: 768px) {
+    & {
+      flex: 0 0 48%;
+      margin: 0 0 5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      flex: 0 0 32%;
+    }
+  }
 }
 
 .title {
@@ -92,12 +105,5 @@
     & + span {
       margin-left: 0.5rem;
     }
-  }
-}
-
-@media (min-width: 1024px) {
-  .projectContainer {
-    flex: 0 0 32%;
-    margin: 0 0 5rem;
   }
 }
