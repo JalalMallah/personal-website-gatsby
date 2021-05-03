@@ -9,6 +9,7 @@
 - Gatsby
 - CSS Modules
 - i18next for internationalization
+- FontAwesome Icons
 
 ---
 
