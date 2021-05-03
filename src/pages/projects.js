@@ -48,6 +48,22 @@ export default function Projects({ data }) {
       site: 'https://jalalmallah.github.io/new-year-countdown/',
       technologies: ['javascript', 'sass'],
     },
+    {
+      id: 4,
+      title: t('projects.quotes'),
+      image: getImage(data.allFile.nodes[4]),
+      repo: 'https://github.com/JalalMallah/quote-generator',
+      site: 'https://apiquotegenerator.netlify.app/',
+      technologies: ['react', 'CSS modules'],
+    },
+    {
+      id: 5,
+      title: t('projects.calculator'),
+      image: getImage(data.allFile.nodes[5]),
+      repo: 'https://github.com/JalalMallah/web-calculator',
+      site: 'https://sample-calculator.netlify.app/',
+      technologies: ['javascript', 'sass'],
+    },
   ];
   return (
     <>
