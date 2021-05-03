@@ -15,7 +15,7 @@
 
 ### Mobile View Illustration
 
-![cover](./screenshots/mobile.png)
+<img src="./screenshots/mobile.png" alt="Mobile View Illustration" width="200"/>
 
 ---
 
