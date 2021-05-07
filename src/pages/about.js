@@ -54,7 +54,7 @@ export default function About() {
     {
       id: 6,
       label: t('about.cssInJs'),
-      options: ['styled-components'],
+      options: ['CSS modules', 'styled-components'],
     },
     {
       id: 7,
