@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Jalal Mallah - Personal Website`,
-        short_name: `JM Homepage`,
+        short_name: `JalalMallah Homepage`,
         start_url: `/`,
         background_color: `#efaa1f`,
         theme_color: `#60246a`,
