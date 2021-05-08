@@ -82,18 +82,20 @@
 
 @media (min-width: 360px) {
   .nav {
-    padding: 12rem 0;
+    display: grid;
+    place-items: center;
   }
 
   .link {
-    margin: 0 0 2rem;
+    margin: 0 0 3rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (min-width: 768px) {
   .link {
-    margin: 0 0 3rem;
-    font-size: 2rem;
+    margin: 0 0 4rem;
+    font-size: 3rem;
   }
 
   .closeSidebar {
