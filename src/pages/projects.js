@@ -11,12 +11,21 @@ import * as styles from 'styles/projects.module.scss';
 
 export default function Projects({ data }) {
   const { t } = useTranslation();
+  console.clear();
+
+  function extractImage(term) {
+    const index = data.allFile.nodes.findIndex(node =>
+      node.childImageSharp.gatsbyImageData.images.fallback.src.includes(term)
+    );
+    const image = getImage(data.allFile.nodes[index]);
+    return image;
+  }
 
   const projectsData = [
     {
       id: 0,
       title: 'API Hub',
-      image: getImage(data.allFile.nodes[0]),
+      image: extractImage('apiHub'),
       repo: 'https://github.com/JalalMallah/API-Hub/tree/master',
       site: 'https://jalalmallah.github.io/API-Hub/',
       technologies: ['react', 'react-router', 'styled-components'],
@@ -24,7 +33,7 @@ export default function Projects({ data }) {
     {
       id: 1,
       title: t('projects.landingPage'),
-      image: getImage(data.allFile.nodes[1]),
+      image: extractImage('landingPage'),
       repo:
         'https://github.com/JalalMallah/landing-page-with-modal/tree/master',
       site: 'https://jalalmallah.github.io/landing-page-with-modal/',
@@ -33,7 +42,7 @@ export default function Projects({ data }) {
     {
       id: 2,
       title: t('projects.form'),
-      image: getImage(data.allFile.nodes[2]),
+      image: extractImage('form'),
       repo:
         'https://github.com/JalalMallah/form-validation-with-input-animation/tree/master',
       site:
@@ -43,7 +52,7 @@ export default function Projects({ data }) {
     {
       id: 3,
       title: t('projects.countdown'),
-      image: getImage(data.allFile.nodes[3]),
+      image: extractImage('countdown'),
       repo: 'https://github.com/JalalMallah/new-year-countdown/tree/master',
       site: 'https://jalalmallah.github.io/new-year-countdown/',
       technologies: ['javascript', 'sass'],
@@ -51,7 +60,7 @@ export default function Projects({ data }) {
     {
       id: 4,
       title: t('projects.quotes'),
-      image: getImage(data.allFile.nodes[4]),
+      image: extractImage('quotes'),
       repo: 'https://github.com/JalalMallah/quote-generator',
       site: 'https://apiquotegenerator.netlify.app/',
       technologies: ['react', 'CSS modules'],
@@ -59,7 +68,7 @@ export default function Projects({ data }) {
     {
       id: 5,
       title: t('projects.calculator'),
-      image: getImage(data.allFile.nodes[5]),
+      image: extractImage('calculator'),
       repo: 'https://github.com/JalalMallah/web-calculator',
       site: 'https://sample-calculator.netlify.app/',
       technologies: ['javascript', 'sass'],
