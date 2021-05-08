@@ -12,13 +12,13 @@
 }
 
 .paragraph {
-  width: 90%;
+  width: 95%;
   margin: 0 auto 3rem;
   color: var(--light);
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   animation: slide-right 0.5s 1s ease both;
 }
 
@@ -34,7 +34,16 @@
 
 @media (min-width: 360px) {
   .title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
+  }
+
+  .paragraph {
+    font-size: 1.4rem;
+  }
+
+  .myProjectsButton {
+    padding: 1rem 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
