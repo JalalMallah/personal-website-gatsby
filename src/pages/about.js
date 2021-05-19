@@ -6,6 +6,8 @@ import Title from 'components/Title/Title';
 import Text from 'components/Text/Text';
 import List from 'components/List/List';
 
+import { v4 as uuidv4 } from 'uuid';
+
 import * as styles from 'styles/about.module.scss';
 
 export default function About() {
@@ -13,12 +15,12 @@ export default function About() {
 
   const skillsData = [
     {
-      id: 0,
+      id: uuidv4(),
       label: t('about.html'),
       options: [],
     },
     {
-      id: 1,
+      id: uuidv4(),
       label: t('about.css'),
       options: [
         'SASS',
@@ -32,52 +34,57 @@ export default function About() {
       ],
     },
     {
-      id: 2,
+      id: uuidv4(),
       label: t('about.js'),
       options: ['ES6', 'DOM manipulation', 'fetch API', 'ES modules'],
     },
     {
-      id: 3,
+      id: uuidv4(),
       label: t('about.react'),
       options: ['hooks', 'context API'],
     },
     {
-      id: 4,
+      id: uuidv4(),
       label: t('about.gatsby'),
       options: [],
     },
     {
-      id: 5,
+      id: uuidv4(),
+      label: t('about.stateMngmt'),
+      options: ['redux'],
+    },
+    {
+      id: uuidv4(),
       label: t('about.routing'),
       options: ['react-router', 'reach-router'],
     },
     {
-      id: 6,
+      id: uuidv4(),
       label: t('about.cssInJs'),
       options: ['CSS modules', 'styled-components'],
     },
     {
-      id: 7,
+      id: uuidv4(),
       label: t('about.git'),
       options: ['git'],
     },
     {
-      id: 8,
+      id: uuidv4(),
       label: t('about.hosting'),
       options: ['netlify', 'gh-pages', 'OVH'],
     },
     {
-      id: 9,
+      id: uuidv4(),
       label: t('about.lang'),
       options: ['i18next'],
     },
     {
-      id: 10,
+      id: uuidv4(),
       label: t('about.design'),
       options: ['figma'],
     },
     {
-      id: 11,
+      id: uuidv4(),
       label: t('about.linux'),
       options: [],
     },
