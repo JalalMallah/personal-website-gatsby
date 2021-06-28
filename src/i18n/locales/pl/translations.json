@@ -32,6 +32,7 @@
     "html": "Semantyczny HTML5",
     "css": "CSS:",
     "js": "JavaScript:",
+    "ts": "TypeScript",
     "react": "ReactJS:",
     "gatsby": "Gatsby",
     "stateMngmt": "Zarządzanie Stanem:",

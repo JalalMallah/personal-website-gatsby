@@ -40,6 +40,11 @@ export default function About() {
     },
     {
       id: uuidv4(),
+      label: t('about.ts'),
+      options: [],
+    },
+    {
+      id: uuidv4(),
       label: t('about.react'),
       options: ['hooks', 'context API'],
     },
