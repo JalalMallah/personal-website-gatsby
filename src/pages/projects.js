@@ -51,6 +51,14 @@ export default function Projects({ data }) {
     },
     {
       id: 3,
+      title: t('projects.contacts'),
+      image: extractImage('contacts'),
+      repo: 'https://github.com/JalalMallah/contact-list-with-filter',
+      site: 'https://contact-list-with-filter.netlify.app/',
+      technologies: ['react', 'typescript', 'CSS modules'],
+    },
+    {
+      id: 4,
       title: t('projects.countdown'),
       image: extractImage('countdown'),
       repo: 'https://github.com/JalalMallah/new-year-countdown/tree/master',
@@ -58,20 +66,12 @@ export default function Projects({ data }) {
       technologies: ['javascript', 'sass'],
     },
     {
-      id: 4,
+      id: 5,
       title: t('projects.quotes'),
       image: extractImage('quotes'),
       repo: 'https://github.com/JalalMallah/quote-generator',
       site: 'https://apiquotegenerator.netlify.app/',
       technologies: ['react', 'CSS modules'],
-    },
-    {
-      id: 5,
-      title: t('projects.calculator'),
-      image: extractImage('calculator'),
-      repo: 'https://github.com/JalalMallah/web-calculator',
-      site: 'https://sample-calculator.netlify.app/',
-      technologies: ['javascript', 'sass'],
     },
   ];
   return (
